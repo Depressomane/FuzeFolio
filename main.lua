@@ -1,11 +1,11 @@
 --- STEAMODDED HEADER
---- MOD_NAME: Infinite Fusion Starter Pack
---- MOD_ID: InfiniteFusionStarter
---- MOD_AUTHOR: [SpaD_Overolls, Joey J. Jester, SeSebasti]
---- MOD_DESCRIPTION: Custom assets for various InfiniFusions
---- PREFIX: ifstar
+--- MOD_NAME: Fuze Folio
+--- MOD_ID: fuzefolio
+--- MOD_AUTHOR: [SpaD_Overolls, humplydinkle, SeSebasti and the Balatro Discord]
+--- MOD_DESCRIPTION: Mod that adds custom assets for Balatro Infinite Fusion.
+--- PREFIX: fuze
 --- VERSION: 0.0.1
---- DEPENDENCIES: [InfiniteFusion>=0.0.2]
+--- DEPENDENCIES: [InfiniteFusion>=0.0.3]
 
 SMODS.Atlas {
 	key = 'jokers',

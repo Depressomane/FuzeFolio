@@ -1,7 +1,7 @@
 return {
     descriptions = {
 		Joker = {
-			if_ifstar_m_incarnate = {
+			if_fuze_m_incarnate = {
 				name = 'M Incarnate',
 				text = {
 					"{C:red}+#1#{} Mult if played",
@@ -9,7 +9,7 @@ return {
 					"a {C:attention}#2#"
 				}
 			},
-			if_ifstar_easter_egg = {
+			if_fuze_easter_egg = {
 				name = 'Easter Egg',
 				text = {
 					"Gains {C:money}$#1#{} and adds {C:money}$#2#{} {C:attention}sell value{}",
@@ -18,7 +18,7 @@ return {
                     "at end of round"
 				}
 			},
-			if_ifstar_collector = {
+			if_fuze_collector = {
 				name = 'Collector',
 				text = {
 					"All {C:planet}Planet{} cards and {C:planet}Celestial Packs{}",
@@ -28,7 +28,7 @@ return {
                     "{C:inactive}(Must have room)"
 				}
 			},
-			if_ifstar_sponsorship = {
+			if_fuze_sponsorship = {
 				name = 'Sponsorship',
 				text = {
 					"Sell this card to disable",
@@ -36,7 +36,7 @@ return {
                     "create a free {C:attention}#1#",
 				}
 			},
-			if_ifstar_bullfighting = {
+			if_fuze_bullfighting = {
 				name = 'Bullfighting',
 				text = {
 					"{C:chips}+#1#{} Chips for each {C:money}$1{} you have",
@@ -45,7 +45,7 @@ return {
                     "{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)"
 				}
 			},
-			if_ifstar_oops_all_20s = {
+			if_fuze_oops_all_20s = {
 				name = 'Oops! All 20s',
 				text = {
 					"Doubles all {C:attention}listed",
