@@ -5,7 +5,7 @@
 --- MOD_DESCRIPTION: Mod that adds custom assets for Balatro Infinite Fusion.
 --- PREFIX: fuze
 --- VERSION: 0.0.1
---- DEPENDENCIES: [InfiniteFusion>=0.0.3]
+--- DEPENDENCIES: [InfiniteFusion>=0.0.4]
 
 SMODS.Atlas {
 	key = 'jokers',
@@ -28,7 +28,23 @@ SMODS.InfiniFusion {
 			total = total + subjokers[i].vars[1]
 		end
 		return {vars = {total, subjokers[1].vars[2]}}
-	end,	
+	end,
+	calculate = function(self, card, context)
+		if context.joker_main then
+			if next(context.poker_hands[card.infinifusion[1].ability.type]) then
+				local mult = 0
+				for i = 1, #card.infinifusion do
+					mult = mult + card.infinifusion[i].ability.t_mult
+				end
+				if mult ~= 0 then
+					return {
+						message = localize{type='variable',key='a_mult',vars={mult}},
+						mult_mod = mult
+					}
+				end
+			end
+		end
+	end
 }
 
 SMODS.InfiniFusion {
