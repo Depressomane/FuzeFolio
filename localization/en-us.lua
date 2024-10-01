@@ -53,6 +53,14 @@ return {
                     "{C:inactive}(ex: {C:green}1 in 3{C:inactive} -> {C:green}4 in 3{C:inactive})"
 				}
 			},
+			if_fuze_diamond_in_rough = {
+				name = 'Diamond in the Rough',
+				text = {
+					"Played cards with",
+					"{C:diamonds}Diamond{} suit earn",
+					"{C:money}$#1#{} when scored"
+				}
+			},
 		}
 	}
 }

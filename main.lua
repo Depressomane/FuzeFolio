@@ -19,6 +19,8 @@ SMODS.InfiniFusion {
 	contents = {
 		'j_jolly', 'j_jolly'
 	},
+	atlas = 'jokers',
+	pos = {x = 0, y = 1},
 	no_info_queue = true,	
 	loc_vars = function(self, info_queue, card, subjokers)
 		local total = 0
@@ -63,6 +65,8 @@ SMODS.InfiniFusion {
 	contents = {
 		'j_luchador', 'j_diet_cola'
 	},
+	atlas = 'jokers',
+	pos = {x = 1, y = 1},
 	loc_vars = function(self, info_queue, card, subjokers)
 		local tag = {}
 		for i = 1, #subjokers do
@@ -78,6 +82,8 @@ SMODS.InfiniFusion {
 	contents = {
 		'j_bull', 'j_matador'
 	},
+	atlas = 'jokers',
+	pos = {x = 1, y = 1},
 	loc_vars = function(self, info_queue, card, subjokers)
 		local chip_mod = 0
 		local current_chip = 0
@@ -99,5 +105,24 @@ SMODS.InfiniFusion {
 	contents = {
 		'j_oops_all_6s', 'j_oops_all_6s'
 	},
+	atlas = 'jokers',
+	pos = {x = 1, y = 1},
 	no_info_queue = true,	
+}
+
+SMODS.InfiniFusion {
+	key = 'diamond_in_rough',
+	contents = {
+		'j_rough_gem', 'j_rough_gem'
+	},
+	atlas = 'jokers',
+	pos = {x = 1, y = 1},
+	no_info_queue = true,	
+	loc_vars = function(self, info_queue, card, subjokers)
+		local total = 0
+		for i = 1, #subjokers do
+			total = total + subjokers[i].vars[1]
+		end
+		return {vars = {total, subjokers[1].vars[2]}}
+	end,	
 }
