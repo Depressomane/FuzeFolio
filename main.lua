@@ -119,7 +119,7 @@ SMODS.InfiniFusion {
 SMODS.InfiniFusion {
 	key = 'oops_all_20s',
 	contents = {
-		'j_oops_all_6s', 'j_oops_all_6s'
+		'j_oops', 'j_oops'
 	},
 	atlas = 'jokers',
 	pos = {x = 1, y = 1},
