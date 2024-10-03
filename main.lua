@@ -20,7 +20,7 @@ SMODS.InfiniFusion {
 		'j_jolly', 'j_jolly'
 	},
 	atlas = 'jokers',
-	pos = {x = 0, y = 1},
+	pos = {x = 2, y = 0},
 	no_info_queue = true,	
 	loc_vars = function(self, info_queue, card, subjokers)
 		local total = 0
